@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Quiz App | HireDevUgo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd30846e4f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <!-- quiz start button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- info-box -->
+    <div class="info_box">
+        <h2>XYZ Academy</h2>
+        <div class="info_title">   
+            <span>CBT Rules</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You have only <span>15 seconds</span> per question.</div>
+            <div class="info">2. Once selected, you cant reselect!.</div>
+            <div class="info">3. Once the time is off you cant select any option.</div>
+            <div class="info">4. You cant exit the quiz while on it.</div>
+            <div class="info">5. You will be scored based on answers selected.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- quiz box -->
+    <div class="quiz_box">
+        <h2>XYZ Academy</h2>
+        <header>  
+            <div class="title">CBT Questions</div>
+            <div class="timer">
+                <div class="timer_text">Time Left</div>
+                <div class="timer_sec">15</div>    
+            </div>
+            <div class="time_line"></div>    
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                    <!-- <div class="icon cross"><i class="fas fa-times"></i></div> -->
+                </div>
+                <div class="option">
+                    <span>Hyper Tool Multiple Language</span>
+                    <!-- <div class="icon cross"><i class="fas fa-times"></i></div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- quiz box footer -->
+        <footer>
+            <div class="total_que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have completed the Quiz!</div>
+        <div class="score_text">
+            <span>You got only <p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Retake Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>    
+</body>
+</html>
